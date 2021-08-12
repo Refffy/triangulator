@@ -3,7 +3,7 @@ from sys import argv
 
 
 def process_tile(tile, y, r, g, b, block_y):
-    for i in range(y+10):
+    for i in range(y+1000):
         for j in range(i, block_y):
             tile.putpixel((j, i), (r, g, b))
             tile.putpixel((i, j), ((r * 3) // 2, (g * 3) //2 , (b * 3) // 2))

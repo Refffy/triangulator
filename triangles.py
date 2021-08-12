@@ -25,7 +25,8 @@ def triangulize(img, block_size):
                 processed_tile = process_tile(tiled_img, y, r, g, b, block_y)
                 img.paste(processed_tile, (x, y))
 
-        img.save('link.jpg')
+        img.show()
+
 
 if __name__ == '__main__':
     block_size = int(argv[2]), int(argv[3])

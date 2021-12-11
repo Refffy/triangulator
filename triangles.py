@@ -1,4 +1,5 @@
 from PIL import Image
+from tqdm import tqdm
 from sys import argv
 
 
@@ -7,7 +8,7 @@ def triangulize(img, block_size):
         w, h = img.size
         block_x, block_y = block_size
 
-        for x in range(0, w, block_x):
+        for x in tqdm(range(0, w, block_x), desc='Completed in'):
             for y in range(0, h, block_y):
                 box = (y, x, y+block_x, x+block_y)
 

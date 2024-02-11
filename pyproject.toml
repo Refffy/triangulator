@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "triangles"
+version = "0.1.0"
+description = ""
+authors = ["Refffy <gvertyes124@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.4"
+pillow = "^10.2.0"
+tqdm = "^4.66.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

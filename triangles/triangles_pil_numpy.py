@@ -20,7 +20,7 @@ def triangulize(img_path, block_size):
 
                 mask = np.tri(
                     block_size, block_size, dtype=bool
-                ).T[:end_y-y, :end_x-x]
+                )
 
                 top_triangle_color = np.array([r, g, b])
                 bottom_triangle_color = ((top_triangle_color * 1.8).astype(int)).clip(0, 255)

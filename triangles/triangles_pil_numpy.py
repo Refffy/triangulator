@@ -18,9 +18,7 @@ def triangulize(img_path, block_size):
 
                 r, g, b = block[0, 0, :]
 
-                mask = np.tri(
-                    block_size, block_size, dtype=bool
-                )
+                mask = np.tri(block.shape[0], block.shape[1], dtype=bool)
 
                 top_triangle_color = np.array([r, g, b])
                 bottom_triangle_color = ((top_triangle_color * 1.8).astype(int)).clip(0, 255)
